@@ -1,0 +1,37 @@
+.grid {
+    display: grid;
+}
+
+.grid.justify-center {
+    justify-items: center;
+}
+
+.grid.align-center {
+    align-items: center;
+}
+
+.grid.content-center {
+    justify-content: center;
+}
+
+.grid--1x2, .grid--1x3 {
+    grid-template-columns: 1fr;
+}
+
+.grid .self-center {
+    align-self: flex-start;
+}
+
+@media screen and (min-width: 768px) {
+    .grid--1x2 {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .grid--1x3 {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
+    }
+}

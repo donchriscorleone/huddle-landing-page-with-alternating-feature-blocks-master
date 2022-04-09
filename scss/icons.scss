@@ -1,0 +1,25 @@
+@import './variables.scss';
+
+.logo--primary {
+    fill: $pink;
+}
+
+.logo--white {
+    fill: #fff;
+    margin-bottom: 3rem;
+}
+
+.icon-container {
+    height: 300px;
+    width: 100%;
+}
+
+.icon-container .illustration-icon {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.icon-container .illustration-icon.icon-mockup {
+    fill: $pink;
+}

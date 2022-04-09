@@ -1,0 +1,41 @@
+@import './variables.scss';
+
+h1, h2, h3 {
+    font-family: $poppins;
+    font-weight: 600;
+}
+
+p, span, button, a {
+    font-family: $open-sans;
+}
+
+h1 {
+    font-size: 3.3rem;
+}
+
+h2 {
+    font-size: 2.75rem;
+}
+
+h3 {
+    font-size: 2.3rem;
+}
+
+p {
+    font-size: 1.75rem;
+    margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 3.8rem;
+    }
+
+    h2 {
+        font-size: 3.2rem;
+    }
+
+    h3 {
+        font-size: 2.8rem;
+    }
+}

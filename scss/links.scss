@@ -1,0 +1,55 @@
+@import './variables.scss';
+
+a {
+    text-decoration: none;
+    color: $very-pal-cyan;
+    text-transform: capitalize;
+    font-size: 2rem;
+
+    &:visited {
+        color: $very-pal-cyan;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.link-icon {
+    padding: 10px 15px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: transparent;
+    border: 1px solid $very-pal-cyan;
+    outline: none;
+    display: block;
+    transition: all .3s;
+
+    &:hover {
+        color: $pink;
+        border-color: $pink;
+        fill: $pink;
+    }
+}
+
+.link-fb {
+    background-image: url('./../images/icon-email.svg');
+}
+
+.link-twitter {
+    background-image: url('./../images/icon-email.svg');
+}
+
+.link-ig {
+    background-image: url('./../images/icon-email.svg');
+}
+
+@media screen and (min-width: 1024px) {
+    a {
+        font-size: 1.5rem;
+    }
+}

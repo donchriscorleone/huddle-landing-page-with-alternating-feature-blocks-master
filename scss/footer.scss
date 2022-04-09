@@ -1,0 +1,69 @@
+@import './variables.scss';
+
+.footer {
+    background-color: $very-dark-cyan;
+    padding: 8rem 10rem 9rem;
+    min-height: 500px;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.footer .lists {
+    column-gap: 4rem;
+
+    > * {
+        margin-top: 2rem;
+    }
+
+    :last-child {
+        justify-self: center;
+        margin-top: 2.5rem;
+    }
+}
+
+.footer .callout {
+    position: absolute;
+    background-color: #fff;
+    top: -15%;
+}
+
+.footer__text {
+    color: $very-pal-cyan;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 6rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        padding: 8rem 7rem 5rem;
+    }
+
+    .footer .lists {
+        grid-template-rows: 1fr 1fr;
+
+        .logo-container {
+            grid-row: 1 / 3;
+            grid-column: 1 / 4;
+        }
+
+        :last-child {
+            margin-top: 0;
+        }
+    }
+
+    .footer .callout {
+        top: -30%;
+    }
+
+    .footer__text {
+        margin: 0 auto;
+        left: initial;
+        right: 20px;
+        bottom: 6rem;
+    }
+}

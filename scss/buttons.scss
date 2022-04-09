@@ -1,0 +1,50 @@
+@import './variables.scss';
+
+.btn {
+    text-transform: capitalize;
+    font-weight: 700;
+    outline: none;
+    border-radius: 10rem;
+    border: none;
+    transition: all .4s;
+    display: block;
+    cursor: pointer;
+
+    &:hover {
+        opacity: .75;
+    }
+}
+
+.btn--primary {
+    padding: 1.2rem 2.5rem;
+    background-color: $pink;
+    color: $very-pal-cyan;
+}
+
+.btn--white {
+    padding: .5rem 1.5rem;
+    color: $very-dark-cyan;
+    background-color: #fff;
+}
+
+.btn--shadow {
+    box-shadow: 0 0 5px .2px rgba($color: #000000, $alpha: .3);
+}
+
+.btn--shadow:hover {
+    box-shadow: 0 0 10px .5px rgba($color: #000000, $alpha: .3);
+}
+
+.btn--block {
+    width: 100%;
+}
+
+.btn--wide-top {
+    padding: 2rem 8rem;
+}
+
+.btn--link {
+    &:hover {
+        text-decoration: none;
+    }
+}

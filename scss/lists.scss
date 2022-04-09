@@ -1,0 +1,84 @@
+@import './variables.scss';
+
+.list {
+    list-style: none;
+    color: $very-pal-cyan;
+    font-family: $open-sans;
+    font-weight: 400;
+}
+
+.list__item {
+    margin-bottom: 1.7rem;
+}
+
+.list--icon {
+    list-style: initial;
+    padding-left: 3.3rem;
+}
+
+.list--icon .list__item {
+    padding-left: 1rem;
+    font-size: 1.7rem;
+}
+
+.list__icon-mail {
+    list-style-image: url('./../images/icon-email.svg');
+}
+
+.list__icon-loc {
+    list-style-image: url('./../images/icon-location.svg');
+}
+
+.list__icon-call {
+    list-style-image: url('./../images/icon-phone.svg');
+}
+
+.list--inline .list__item {
+    display: inline-block;
+    margin-right: 1.2rem;
+}
+
+.list--grid {
+    display: flex;
+    flex-direction: column;
+}
+
+// .list--header-icon {
+//     position: relative;
+// }
+
+// .list--header-icon::before {
+//     position: absolute;
+//     content: '';
+//     width: 100%;
+//     top: -60px;
+//     left: 0;
+//     height: 30px;
+//     background-size: contain;
+//     background-image: url('./../images/logo.svg');
+//     background-repeat: no-repeat;
+//     fill: white;
+// }
+
+
+@media screen and (min-width: 1024px) {
+    .list--icon {
+        padding-left: 3rem;
+    }
+
+    .list--icon .list__item {
+        padding-left: 1.5rem;
+        font-size: 1.9rem;
+    }
+
+    .list--grid {
+        height: 150px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .list__item {
+        margin-bottom: 2rem;
+    }
+
+}

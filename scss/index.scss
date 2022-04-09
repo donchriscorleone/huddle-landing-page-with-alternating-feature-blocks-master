@@ -1,0 +1,34 @@
+@import './variables.scss';
+@import './typography.scss';
+@import './links.scss';
+@import './buttons.scss';
+@import './lists.scss';
+@import './icons.scss';
+@import './grid.scss';
+@import './callout.scss';
+@import './header.scss';
+@import './hero.scss';
+@import './article.scss';
+@import './footer.scss';
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.articles {
+    padding: 4rem 3rem;
+    margin-bottom: 200px;
+    row-gap: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+    .articles {
+        padding: 5rem 8rem;
+    }
+}
